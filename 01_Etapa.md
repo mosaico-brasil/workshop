@@ -4,6 +4,11 @@
 
 Primeira etapa do Workshop: Quantas pessoas com o seu nome na sua cidade?
 
+Iremos utilizar duas tabelas:
+
+- Nomes no Brasil - [link](https://basedosdados.org/dataset/703f9f0d-caee-4b47-b900-46b1dea2c33c?table=3bc00c7a-28e5-421b-b310-b32bed3dd4d4)
+- Diretórios Brasileiros - Municipio - [link](https://basedosdados.org/dataset/33b49786-fb5f-496f-bb7c-9811c985af8e?table=dffb65ac-9df9-4151-94bf-88c45bfcb056)
+
 ### Consultas na tabela `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010`
 
 1a consulta

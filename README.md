@@ -29,7 +29,7 @@ Objetivos Específicos
 
 Conteúdo Programático
 
-1. Introdução à Base dos Dados
+1. Introdução ao projeto Base dos Dados
    - Apresentação do projeto e sua missão
    - Exploração do catálogo de dados disponíveis
    - Casos de uso e aplicações práticas
