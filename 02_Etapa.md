@@ -204,6 +204,7 @@ Legenda da Métrica: Volume de Água Produzido (dam³)
 Aumentar o número de Barras de 10 para 30.
 
 Ordenar Por Ano.
+Classificar por Ano.
 
 Eixo X, Rotação em 90 graus.
 
