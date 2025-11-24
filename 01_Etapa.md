@@ -19,7 +19,7 @@ select
   nome,
   quantidade_nascimentos_ate_2010
 FROM
-  `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010` LIMIT 1000
+  `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010` LIMIT 1000;
 ```
 
 2a consulta
@@ -31,7 +31,7 @@ select
   quantidade_nascimentos_ate_2010
 from
   `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010`
-where nome = 'Tamara'
+where nome = 'Tamara';
 ```
 
 ### Consultas na tabela `basedosdados.br_bd_diretorios_brasil.municipio`
