@@ -56,14 +56,14 @@ select
   m.nome as nome_municipio,
   m.sigla_uf,
   m.nome_uf,
-  qtn.nome,
-  qtn.quantidade_nascimentos_ate_2010
+  qmn.nome,
+  qmn.quantidade_nascimentos_ate_2010
 FROM
-  `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010` as qtn
+  `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010` as qmn
 inner join `basedosdados.br_bd_diretorios_brasil.municipio` as m
   on qtn.id_municipio = m.id_municipio
 where
-  qtn.nome = 'Tamara'
+  qmn.nome = 'Tamara'
 ```
 
 Aplicando o filtro por Cidade

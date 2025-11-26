@@ -142,7 +142,7 @@ SET OPTIONS(
 SELECT
   schema_name
 FROM
-  mosaico-brasil.`region-US`.INFORMATION_SCHEMA.SCHEMATA;
+  mosaico-brasil-[codigo].`region-US`.INFORMATION_SCHEMA.SCHEMATA;
 ```
 
 Cria a Consulta `produzida_por_municipio`. Essa será utilizada pelo Looker.
@@ -193,13 +193,21 @@ on
 order by ano;
 ```
 
+#### Nome do Relatório:
+
+Workshop - Volume de água por município
+
 ### Formatação dos gráficos
 
 #### Gráfico em Barras
 
-Título do gráfico: Volume de água produzido (dam³), por Ano
+Título do gráfico:
 
-Legenda da Métrica: Volume de Água Produzido (dam³)
+Volume de água produzido (dam³), por Ano
+
+Legenda da Métrica:
+
+Volume de Água Produzido (dam³)
 
 Aumentar o número de Barras de 10 para 30.
 
@@ -212,6 +220,6 @@ Eixo X, Rotação em 90 graus.
 
 Título do gráfico: Proporção por Estado
 
-Link público do Looker:
+### Link público do Looker:
 
 https://lookerstudio.google.com/reporting/64409d66-9def-48db-9c17-c611eeb55fad
