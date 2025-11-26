@@ -9,6 +9,22 @@ Iremos utilizar duas tabelas:
 - Nomes no Brasil - [link](https://basedosdados.org/dataset/703f9f0d-caee-4b47-b900-46b1dea2c33c?table=3bc00c7a-28e5-421b-b310-b32bed3dd4d4)
 - Diretórios Brasileiros - Municipio - [link](https://basedosdados.org/dataset/33b49786-fb5f-496f-bb7c-9811c985af8e?table=dffb65ac-9df9-4151-94bf-88c45bfcb056)
 
+## Acesso ao BigQuery
+
+Ao acessar o BigQuery, ele solicita a criação de um Projeto (Project).
+
+Nome:
+
+```
+mosaico-brasil
+```
+
+Ele automaticamente vai adicionar um código ao final, ficando:
+
+mosaico-brasil-795546
+
+Iremos utilizar esse nome na Etapa 02.
+
 ### Consultas na tabela `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010`
 
 1.1 Tabela `quantidade_municipio_nome_2010`
