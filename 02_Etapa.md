@@ -9,7 +9,7 @@ Iremos utilizar duas tabelas:
 - Serviços de Água e Esgoto nos Municípios - [link](https://basedosdados.org/dataset/2a543ad8-3cdb-4047-9498-efe7fb8ed697?table=df7cf198-4889-4baf-bb77-4e0e28eb90ca)
 - Diretórios Brasileiros - Municipio - [link](https://basedosdados.org/dataset/33b49786-fb5f-496f-bb7c-9811c985af8e?table=dffb65ac-9df9-4151-94bf-88c45bfcb056)
 
-Dados da tabela `municipio_agua_esgoto`
+2.1 Dados da tabela `municipio_agua_esgoto`
 
 ```sql
 SELECT
@@ -24,7 +24,7 @@ FROM
   `basedosdados.br_mdr_snis.municipio_agua_esgoto` LIMIT 1000
 ```
 
-Explorando a tabela `prestador_agua_esgoto`
+2.2 Explorando a tabela `prestador_agua_esgoto`
 
 ```sql
 SELECT
@@ -39,7 +39,7 @@ FROM
   `basedosdados.br_mdr_snis.prestador_agua_esgoto` LIMIT 1000
 ```
 
-Utilizando o `where` com o `like` para pesquisar a Sigla do Prestador
+2.3 Utilizando o `where` com o `like` para pesquisar a Sigla do Prestador
 
 ```sql
 SELECT
@@ -57,7 +57,7 @@ where
   sigla_prestador like 'SANEATINS%';
 ```
 
-Pesquisa pelo Id do Município Itaituba, PA
+2.4 Pesquisa pelo Id do Município Itaituba, PA
 
 ```sql
 SELECT
@@ -75,7 +75,7 @@ FROM
 where id_municipio = '1503606' -- Itaituba, PA
 ```
 
-Preparando os dados para realizar o `inner join`
+2.5 Preparando os dados para realizar o `inner join`
 
 ```sql
 -- tabela municipio_agua_esgoto
@@ -101,7 +101,7 @@ from
   `basedosdados.br_bd_diretorios_brasil.municipio` LIMIT 1000;
 ```
 
-Estrutura dos dados após o `inner join` entre `municipio_agua_esgoto` e `municipio`
+2.6 Estrutura dos dados após o `inner join` entre `municipio_agua_esgoto` e `municipio`
 
 ```sql
 select
@@ -122,7 +122,7 @@ on
 order by ano;
 ```
 
-Criaçao do dataset `saneamento_por_municipio`
+2.7 Criaçao do dataset `saneamento_por_municipio`
 
 ```sql
 -- Cria um novo dataset
@@ -145,7 +145,7 @@ FROM
   mosaico-brasil-[codigo].`region-US`.INFORMATION_SCHEMA.SCHEMATA;
 ```
 
-Cria a Consulta `produzida_por_municipio`. Essa será utilizada pelo Looker.
+2.8 Cria a Consulta `produzida_por_municipio`. Essa será utilizada pelo Looker.
 
 ```sql
 -- Cria uma nova View/Consulta
@@ -169,7 +169,7 @@ on
 order by ano;
 ```
 
-Renomear os campos `sigra_uf` e `ano` e melhorar a apresentação no Looker.
+2.9 Renomear os campos `sigra_uf` e `ano` e melhorar a apresentação no Looker.
 
 ```sql
 -- Cria uma nova View/Consulta
