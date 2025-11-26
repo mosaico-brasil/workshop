@@ -11,7 +11,7 @@ Iremos utilizar duas tabelas:
 
 ### Consultas na tabela `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010`
 
-1.1
+1.1 Tabela `quantidade_municipio_nome_2010`
 
 ```sql
 select
@@ -22,7 +22,7 @@ FROM
   `basedosdados.br_ibge_nomes_brasil.quantidade_municipio_nome_2010` LIMIT 1000;
 ```
 
-1.2
+1.2 Tabela `quantidade_municipio_nome_2010` com filtro `name`
 
 ```sql
 select
@@ -36,7 +36,7 @@ where nome = 'Tamara';
 
 ### Consultas na tabela `basedosdados.br_bd_diretorios_brasil.municipio`
 
-1.3
+1.3 Tabela `municipio`
 
 ```sql
 select
@@ -50,7 +50,7 @@ from
 
 ### Junção entre as duas tabelas, `quantidade_municipio_nome_2010` e `municipio` utilizando o `inner join`
 
-1.4
+1.4 Aplicação do `inner join`
 
 ```sql
 -- Usando o inner join
@@ -70,9 +70,7 @@ where
   qmn.nome = 'Tamara'
 ```
 
-Aplicando o filtro por Cidade
-
-1.5
+1.5 Aplicando o filtro por Cidade
 
 ```sql
 -- Usando o inner join
