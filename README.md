@@ -24,7 +24,7 @@ Capacitar os participantes na análise e visualização de dados públicos brasi
 ### Objetivos Específicos
 
 - Compreender a estrutura e o funcionamento da plataforma Base dos Dados (https://basedosdados.org)
-- Navegar e explorar conjuntos de dados no data lake do BigQuery
+- Navegar e explorar conjuntos de dados no _datalake_ do BigQuery
 - Desenvolver consultas em SQL para extração e análise de dados
 - Criar visualizações e dashboards no Google Looker para comunicação de resultados
 

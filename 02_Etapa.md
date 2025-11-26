@@ -169,6 +169,10 @@ on
 order by ano;
 ```
 
+### Criar visualizações e dashboards no Looker Studio para comunicação de resultados
+
+Link para o Looker - http://lookerstudio.google.com/
+
 2.9 Renomear os campos `sigra_uf` e `ano` e melhorar a apresentação no Looker.
 
 ```sql
@@ -176,10 +180,10 @@ order by ano;
 create or replace view saneamento_por_municipio.produzida_por_municipio as
 
 select
-  mag.ano as `Ano`,
+  mag.ano as `Ano`,       -- Campo renomeado
   m.id_municipio,
   m.nome as `Município`,
-  m.sigla_uf as `Estado`,
+  m.sigla_uf as `Estado`, -- Campo renomeado
   mag.populacao_urbana_atendida_agua,
   mag.volume_agua_produzido,
   mag.volume_agua_tratada_eta,
